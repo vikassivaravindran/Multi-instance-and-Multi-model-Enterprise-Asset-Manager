@@ -3,12 +3,17 @@
  */
 package com.conti.enterprise.model;
 
+import javax.persistence.Entity;
+import javax.persistence.Id;
+
 /**
  * @author Vikas Siva Ravindran
  *
  */
+@Entity(name="Assets")
 public class AssetDTO {
 
+	@Id
 	private int id;
 
 	private String name;
